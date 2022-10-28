@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:planney/style/style.dart';
 
 class InfoCard extends StatelessWidget {
   final String cardTitle;
   final String textButtonCTA;
-  final IconData? textButtonIcon;
+  final String imagePath;
+
   const InfoCard(
       {Key? key,
       required this.cardTitle,
       required this.textButtonCTA,
-      required this.textButtonIcon})
+      required this.imagePath})
       : super(key: key);
 
   @override
@@ -17,6 +19,8 @@ class InfoCard extends StatelessWidget {
       width: double.maxFinite,
       height: 280,
       child: Card(
+        color: AppStyle.backgroundBuyColor,
+
         elevation: 10,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -26,8 +30,9 @@ class InfoCard extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(12, 4, 0, 0),
               child: Text(
                 cardTitle,
-                style: const TextStyle(
-                  fontWeight: FontWeight.w500,
+                style: TextStyle(
+                  color: AppStyle.cardBackgroundColor,
+                  fontWeight: FontWeight.normal,
                   fontSize: 18,
                 ),
               ),
@@ -35,15 +40,15 @@ class InfoCard extends StatelessWidget {
             SizedBox(
               height: 184,
               width: MediaQuery.of(context).size.width,
-              child: Image.network(
-                'https://cdn.discordapp.com/attachments/1018978765327585392/1034263072635891712/Colorful_Flower_Fashion_Sale_Presentation_3.png',
+              child: Image.asset(
+                imagePath,
                 fit: BoxFit.fill,
               ),
             ),
-            const Divider(
+            Divider(
               height: 0,
               thickness: 1,
-              color: Colors.black,
+              color: AppStyle.backgroundColor,
             ),
             SizedBox(
               height: 40,
@@ -58,14 +63,16 @@ class InfoCard extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 6),
                         child: Text(
                           textButtonCTA,
-                          style: const TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 16),
+                          style: TextStyle(
+                              color: AppStyle.cardBackgroundColor,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16),
                         ),
                       ),
                       Icon(
-                        textButtonIcon,
+                        Icons.arrow_forward,
                         size: 16,
-                        color: Colors.orange,
+                        color: AppStyle.button1Color,
                       )
                     ],
                   )),
