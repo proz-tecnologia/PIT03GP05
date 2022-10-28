@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:planney/strings.dart';
 import 'package:planney/style/style.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class WelcomePage extends StatefulWidget {
+  const WelcomePage({Key? key}) : super(key: key);
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<WelcomePage> createState() => WelcomePageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     double deviceWidht = MediaQuery.of(context).size.width;
@@ -74,7 +74,8 @@ class _LoginPageState extends State<LoginPage> {
               Strings.LOGIN_DESCRIPTION,
               style: TextStyle(
                   color: AppStyle.backgroundBuyColor,
-                  fontWeight: FontWeight.w500),
+                  fontWeight: FontWeight.w500,
+                  fontSize: 18),
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.35,
