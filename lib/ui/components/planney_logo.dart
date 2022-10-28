@@ -15,7 +15,7 @@ class PlanneyLogo extends StatelessWidget {
           style: TextStyle(
               color: AppStyle.button1Color,
               fontWeight: FontWeight.bold,
-              fontSize: 40),
+              fontSize: 52),
         ),
         const SizedBox(
           width: 6,
@@ -23,18 +23,18 @@ class PlanneyLogo extends StatelessWidget {
         Stack(
           children: [
             Container(
-              height: 56,
-              width: 56,
+              height: 64,
+              width: 64,
               decoration: BoxDecoration(
                 color: AppStyle.cardBackgroundColor,
                 borderRadius: const BorderRadius.all(Radius.circular(100)),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 42),
+              padding: const EdgeInsets.only(left: 52),
               child: Container(
-                height: 56,
-                width: 56,
+                height: 64,
+                width: 64,
                 decoration: BoxDecoration(
                   color: AppStyle.button1Color,
                   borderRadius: const BorderRadius.all(Radius.circular(100)),
