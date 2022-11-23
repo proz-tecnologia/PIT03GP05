@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:planney/style/style.dart';
 
 class PlanneyLogo extends StatelessWidget {
+
   final double size;
   const PlanneyLogo({Key? key, required this.size}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final double circleSize = size + 8;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -25,6 +27,7 @@ class PlanneyLogo extends StatelessWidget {
         Stack(
           children: [
             Container(
+
               height: circleSize,
               width: circleSize,
               decoration: BoxDecoration(
