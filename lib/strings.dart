@@ -26,6 +26,6 @@ abstract class Strings {
   static const REGISTE_FORM_REPEAT_PASSWORD_HELPER =
       "As senhas devem ser iguais";
   static const REGISTER_BUTTON_REGISTER = 'Cadastre-se';
-  static const CHANGE_PROFILE_DATA = 'Salvar';
+  static const CHANGING_PROFILE_DATA = 'Salvar';
   static const CANCELING_CHANGE_PROFILE_DATA = 'Cancelar';
 }

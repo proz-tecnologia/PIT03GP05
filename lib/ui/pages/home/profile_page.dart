@@ -115,7 +115,7 @@ class ProfilePage extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: _doRegister,
                   child: const Text(
-                    Strings.CHANGE_PROFILE_DATA,
+                    Strings.CHANGING_PROFILE_DATA,
                     style: TextStyle(fontSize: 18),
                   ),
                 ),
