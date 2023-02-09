@@ -25,5 +25,6 @@ abstract class Strings {
   static const REGISTER_FORM_REPEAT_PASSWORD_ERROR = 'As senhas não coincidem!';
   static const REGISTE_FORM_REPEAT_PASSWORD_HELPER =
       "As senhas devem ser iguais";
+  static const LOGIN_FORM_FORGOT_PASSWORD = "Esqueceu sua senha?";
   static const REGISTER_BUTTON_REGISTER = 'Cadastre-se';
 }
