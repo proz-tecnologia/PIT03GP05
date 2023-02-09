@@ -41,6 +41,8 @@ void main() async {
   GetIt.instance.registerSingleton(TransactionsStore());
 
   GetIt.instance.registerSingleton(CategoryStore());
+  
+  GetIt.instance.registerLazySingleton(() => ForgotPasswordController());
 
   GetIt getIt = GetIt.instance;
   getIt.registerLazySingleton(
