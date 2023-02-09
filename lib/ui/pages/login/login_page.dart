@@ -124,6 +124,31 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Container(
+                  alignment: Alignment.bottomCenter,
+                  margin: const EdgeInsets.symmetric(horizontal: 15),
+                  child: SizedBox(
+                    height: 48,
+                    child: TextButton(onPressed: () {
+                  Navigator.push(
+                    navigatorKey.currentContext!,
+                    MaterialPageRoute(
+                      builder: (context) => ForgotPasswordPage(
+                      ),
+                    ),
+                  );
+                }, 
+                    //style: ButtonStyle(),
+                      child: const Text(
+                        Strings.LOGIN_FORM_FORGOT_PASSWORD,
+                        style: TextStyle(fontSize: 18),
+                      ),
+                      ),
+                    ),
+                ),
+              ),
               SizedBox(
                 height: deviceHeight * 0.02,
               ),
